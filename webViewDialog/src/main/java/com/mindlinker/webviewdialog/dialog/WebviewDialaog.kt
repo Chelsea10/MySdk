@@ -1,18 +1,16 @@
 package com.mindlinker.webviewdialog.dialog
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
-import android.webkit.*
+import android.view.ViewGroup
+import android.webkit.* // ktlint-disable no-wildcard-imports
 import android.widget.TextView
 import android.widget.Toast
-import android.content.Intent
-
-import android.net.Uri
-import android.view.ViewGroup
 import com.mindlinker.webviewdialog.R
 import com.mindlinker.webviewdialog.Util
-
 
 class WebviewDialaog(
     context: Context,
@@ -21,7 +19,8 @@ class WebviewDialaog(
     onConfirmCallback: () -> Unit,
     onCancelCallback: () -> Unit,
     confirmButtonText: String = "",
-    cancelButtonText: String = context.getString(R.string.cancel)): BaseDialog(context, isNeedKeyBoardListener = true) {
+    cancelButtonText: String = context.getString(R.string.cancel)
+) : BaseDialog(context, isNeedKeyBoardListener = true) {
 
     private var mView: View
 
@@ -79,7 +78,7 @@ class WebviewDialaog(
         super.dismissDialog()
     }
 
-    inner class MyClient: WebViewClient() {
+    inner class MyClient : WebViewClient() {
 
         override fun shouldOverrideUrlLoading(
             view: WebView?,
@@ -120,7 +119,5 @@ class WebviewDialaog(
         layoutParams.height = ViewGroup.LayoutParams.MATCH_PARENT
         mView.layoutParams = layoutParams
         super.hideKeyboard()
-
     }
-
 }

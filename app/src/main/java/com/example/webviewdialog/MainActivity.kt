@@ -21,14 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         val text = findViewById<TextView>(R.id.button)
         text.setOnClickListener {
-            val dialog = com.mindlinker.webviewdialog.dialog.WebviewDialaog(
+            val dialog = WebviewDialaog(
                 this,
                 "Dialog加载网页",
                 "file:///android_asset/js.html",
 //                "https://www.baidu.com/",
                 onConfirmCallback = {},
-                onCancelCallback = {},
-                ""
+                onCancelCallback = {}
             )
             dialog.show()
 //            dialog.dismiss()
@@ -66,8 +65,7 @@ class MainActivity : AppCompatActivity() {
                 "",
                 html + html3,
                 onConfirmCallback = {},
-                onCancelCallback = {},
-                ""
+                onCancelCallback = {}
             )
             dialog2.show()
         }
@@ -78,8 +76,7 @@ class MainActivity : AppCompatActivity() {
                 "",
                 html3 + html3 + html3,
                 onConfirmCallback = {},
-                onCancelCallback = {},
-                ""
+                onCancelCallback = {}
             )
             dialog3.show()
         }

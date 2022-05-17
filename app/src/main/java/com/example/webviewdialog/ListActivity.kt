@@ -30,7 +30,7 @@ class ListActivity: AppCompatActivity() {
 //            A::id, Function.identity(), mergeFunction()
 //        ))
         val map = list.associateBy{ it.id } // list转map
-        if (!map.isNullOrEmpty()) {
+        if (!map.isEmpty()) {
             Log.i( "===================,", "time: ${System.currentTimeMillis() - start} map size: ${map.size}")
         }
         start = System.currentTimeMillis()
