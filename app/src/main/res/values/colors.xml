@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#000000</color>
+    <color name="editTextCursorColor">#FF6B00</color>
+    <color name="systemMsgTipColor">#999999</color>
+
+    <color name="ml_color_1A1A1A">#1A1A1A</color>
+    <color name="ml_color_2A2A2A">#2A2A2A</color>
+    <color name="ml_color_222222">#222222</color>
+    <color name="ml_color_FFFFFF">#FFFFFF</color>
+    <color name="ml_color_000000">#000000</color>
+    <color name="ml_color_32000000">#32000000</color>
+    <color name="ml_color_80000000">#80000000</color>
+    <color name="ml_color_80333333">#80333333</color>
+    <color name="ml_color_1EBE11">#1EBE11</color>
+    <color name="ml_color_80FFFFFF">#80FFFFFF</color>
+    <color name="ml_color_FF5151">#FF5151</color>
+    <color name="ml_color_999999">#999999</color>
+    <color name="ml_color_333333">#333333</color>
+    <color name="ml_color_666666">#666666</color>
+    <color name="ml_color_191F25">#191F25</color>
+    <color name="ml_color_EBEBEB">#EBEBEB</color>
+    <color name="ml_color_FF6B00">#FF6B00</color>
+    <color name="ml_color_D6D6D6">#D6D6D6</color>
+    <color name="ml_color_8063c51b">#8063c51b</color>
+    <color name="ml_color_36FFFFFF">#36FFFFFF</color>
+</resources>
